@@ -1,5 +1,12 @@
 # 03-Text-adventure
 
+Changed the names for game.json.
+other wise added nothing and running what is already here.
+
+
+
+
+
 This is my solution to the 03-Text adventure assignment for MSCH-C220. I have included a couple of .json game description files for anyone to play with.
 
 main_simple.py contains the code we worked out in class (or a close approximation to it). It runs the zork.json file, as long as it is in the same directory.
