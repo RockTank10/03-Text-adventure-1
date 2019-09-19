@@ -14,36 +14,117 @@
 
     "rooms": {
       "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
+        "name": "Mess Hall",
+        "desc": "This is where everyone eats,lots of tables.",
         "exits": [
           {
-            "verb": "NORTH",
-            "target": "LOC2",
+            "verb": "North",
+            "target": "Armory",
             "condition": ""
           },
           {
-            "verb": "SOUTH",
-            "target": "LOC2",
+            "verb": "South",
+            "target": "Heli Pad",
             "condition": ""
           },
           {
             "verb": "WEST",
-            "target": "LOC2",
+            "target": "Loading Bay",
             "condition": ""
           },
           {
             "verb": "EAST",
-            "target": "LOC2",
+            "target": "Bunks",
             "condition": ""
           }
         ],
         "inventory": []
       },
       "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
+        "name": "Armory",
+        "desc": "This is where the weapons are stored,you can see a few right now.",
+        "exits": [ 
+          {
+          "verb": "South",
+          "target": "Mess Hall",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "Loading Bay",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "Bunks",
+          "condition": ""
+        }
+        ],
+        "inventory": []
+      },
+      "LOC3": {
+        "name": "Loading Bay",
+        "desc": "This is where shipments come in,few big trucks still around.",
         "exits": [
+          {
+            "verb": "North",
+            "target": "Armory",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "Heli Pad",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "Mess Hall",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC4": {
+        "name": "Heli Pad",
+        "desc": "The landing pads,no helicopters here right now though.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "Mess Hall",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "Loading Bay",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "Bunks",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC5": {
+        "name": "Bunks",
+        "desc": "This is where everyone sleeps,just so many beds",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "Armory",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "Heli Pad",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "Mess Hall",
+            "condition": ""
+          }
         ],
         "inventory": []
       }
